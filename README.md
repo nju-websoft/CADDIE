@@ -33,7 +33,6 @@ The resources and experimental results are provided in [experiment](https://gith
 ## Citation
 
 If you use these data or codes, please kindly cite it as follows:
-odes, please kindly cite it as follows:
 
 ```latex
 @inproceedings{caddie,
