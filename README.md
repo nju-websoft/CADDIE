@@ -19,6 +19,7 @@ useful packages (jar files) are all provided in [code/lib](https://github.com/nj
 
 ### Database Settings
 
+- Caddie is built upon a local MySQL database. [code/database_tables.sql](code/database_tables.sql) provides the structure of database tables used in our system.
 
 ### Codes
 
