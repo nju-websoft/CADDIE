@@ -6,7 +6,7 @@ Data, source codes and experimental results for paper "*[From Metadata to Conten
 ## Datasets
 
 - All the datasets used in our system are provided in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip). It contains all the metadata of each dataset, including the title, download link, updated time, etc. 
-- Each dataset has a unique numerical *"dataset_id"* which are used in the experiments. Note that one dataset could have multiple corresponding dump files, identified by the entry *"file_id"*.
+- Each dataset has a unique numerical *"dataset_id"* which are used in the experiments. Note that one dataset could have multiple corresponding dump files, identified by *"file_id"*.
 
 ## Source Codes and Dependencies
 
