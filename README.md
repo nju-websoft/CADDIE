@@ -25,13 +25,13 @@ TBD
 
 The resources and experimental results are provided in [experiment](https://github.com/nju-websoft/CBDS/tree/main/experiment).
 
-### Evaluation of Content-Based Dataset Retrieval Model (T1)
+#### Evaluation of Content-Based Dataset Retrieval Model (T1)
 
 
 #### Evaluation of Content-Based Dataset Deduplication (T2)
 
 
-##### Evaluation of Content-Based Dataset Snippet Extraction (T3)
+#### Evaluation of Content-Based Dataset Snippet Extraction (T3)
 
 
 ## License
