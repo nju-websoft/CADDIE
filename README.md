@@ -10,9 +10,16 @@ Data, source codes and experimental results for paper "*[From Metadata to Conten
 
 ## Source Codes and Dependencies
 
-### Dependencies
+### Environments
+
+- JDK 8+
+- MySQL 5.6+
+
+useful packages (jar files) are all provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib). 
 
 ### Codes
+
+TBD
 
 ## Experiments
 
