@@ -41,13 +41,14 @@ Here we briefly explain the structure of source codes following the system compo
 
 #### For Content-Based Dataset Retrieval Model:
 
-- 
+- The package [Retrieval](https://github.com/nju-websoft/CBDS/tree/main/code/src/Retrieval) includes the codes for indexing and retrieving datasets. The weights of fields in the inverted index can be modified in [GlobalVariances](https://github.com/nju-websoft/CBDS/blob/main/code/src/Retrieval/GlobalVariances.java). 
+- The package [ReRanking](https://github.com/nju-websoft/CBDS/tree/main/code/src/ReRanking) contains the computation process of diversity-based re-ranking based on maximal marginal relevance (MMR).
 
 #### For Content-Based Dataset Snippet Extraction:
 
-- 
+- The package [QPCSG](https://github.com/nju-websoft/CBDS/tree/main/code/src/QPCSG) contains the process of data sample extraction. Its main method is in [GetResultTree](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/GetResultTree.java). Besides, as a preprocess, it also requires the distance indexes to be built as in [HubLabelIndexer](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/HubLabelIndexer.java). 
 
-The rest of packages (not mentioned above) are mainly in support of these components and functions. 
+The rest of packages (not mentioned above) are mainly in support of these components, or used for experiments. 
 
 ## Experiments
 
