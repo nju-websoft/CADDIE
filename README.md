@@ -35,16 +35,17 @@ The resources and experimental results are provided in [experiment](https://gith
 #### Evaluation of Content-Based Dataset Retrieval Model (T1)
 
 - The test collection we used to evaluate Caddie is from [ACORDAR](https://github.com/nju-websoft/ACORDAR). 
-- [experiment/1-retrieval](experiment/1-retrieval) provides all the retrieval results on the test collection. We follow the original format (as in [ACORDAR](https://github.com/nju-websoft/ACORDAR)) to present the results. Each row represents a query-dataset pair. The first column represents the query id. The third column stands for dataset id. The fourth column is the ranking score returned by the retrieval system. 
+- [experiment/1-retrieval](https://github.com/nju-websoft/CBDS/tree/main/experiment/1-retrieval) provides all the retrieval results on the test collection. We follow the original format (as in [ACORDAR](https://github.com/nju-websoft/ACORDAR)) to present the results. Each row represents a query-dataset pair. The first column represents the query id. The third column stands for dataset id. The fourth column is the ranking score returned by the retrieval system. 
 - Following the evaluation of the test collection, we also compute the NDCG and MAP scores using [trec_eval](https://trec.nist.gov/trec_eval/) tool.
 
 #### Evaluation of Content-Based Dataset Deduplication (T2)
 
-- [experiment/2-deduplication](experiment/2-deduplication) provides all the identified dataset pairs whose metadata or data similarity exceeds the limit. [dataSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90.txt) consists of all the dataset pairs with data similarity $ > 0.9 $. [dataSimOver90_metaSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90_metaSimBelow90.txt) includes the dataset pairs with data similarity $ > 0.9 $ and metadata similarity $ < 0.9 $. [metaSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90.txt) contains the pairs with metadata similarity $ > 0.9 $. [metaSimOver90_dataSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90_dataSimBelow90.txt) provides the pairs with metadata similarity $ > 0.9 $ and data similarity $ < 0.9 $. 
+- [experiment/2-deduplication](https://github.com/nju-websoft/CBDS/tree/main/experiment/2-deduplication) provides all the identified dataset pairs whose metadata or data similarity exceeds the limit. [dataSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90.txt) consists of all the dataset pairs with data similarity $ > 0.9 $. [dataSimOver90_metaSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90_metaSimBelow90.txt) includes the dataset pairs with data similarity $ > 0.9 $ and metadata similarity $ < 0.9 $. [metaSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90.txt) contains the pairs with metadata similarity $ > 0.9 $. [metaSimOver90_dataSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90_dataSimBelow90.txt) provides the pairs with metadata similarity $ > 0.9 $ and data similarity $ < 0.9 $. 
 - In the result files, each row represents a pair of datasets identified by their *"dataset_id"*. 
 
 #### Evaluation of Content-Based Dataset Snippet Extraction (T3)
 
+- [experiment/3-snippet](https://github.com/nju-websoft/CBDS/tree/main/experiment/3-snippet) provides all the original relevance judgments and ratings from the participants of the user study. 
 
 ## License
 
