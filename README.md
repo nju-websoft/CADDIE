@@ -6,8 +6,8 @@ Data, source codes and experimental results for paper "*[From Metadata to Conten
 
 ## Datasets
 
-- All the datasets used in our system are provided in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip). It contains all the metadata of each dataset, including the title, download link, updated time, etc. 
-- Each dataset has a unique numerical *"dataset_id"* which are used in the experiments. Note that one dataset could have multiple corresponding dump files, identified by *"file_id"*.
+- All the datasets used in our system are provided in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip). It contains the metadata of each dataset, including its title, download link, updated time, etc. 
+- Each dataset has a unique numerical *"dataset_id"*. Note that a dataset may have multiple dump files, identified by different *"file_id"*.
 
 ## Source Codes and Dependencies
 
@@ -23,15 +23,15 @@ All useful packages (jar files) are provided in [code/lib](https://github.com/nj
 ### Database Settings
 
 - Caddie is built upon a local MySQL database. 
-- [code/database_tables.sql](code/database_tables.sql) provides the structure of database tables used in our system. One can import empty tables directly by running the .sql file. Table *dataset_summary* stores all the metadata of the datasets. Table *triple* stores all the parsed RDF triples. Table *rdf_term* stores all the terms (i.e., IRIs, blank nodes, literals) used in the datasets. 
-- For all the database tables, the fields *"dataset_id"* and *"file_id"* are correspond to the IDs appeared in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip).
+- [code/database_tables.sql](code/database_tables.sql) provides the schema of the database. One can restore our database with empty tables by running this SQL file. Table *dataset_summary* stores the metadata of all the datasets. Table *triple* stores all the RDF triples parsed from the datasets. Table *rdf_term* stores all the terms (i.e., IRIs, blank nodes, literals) appearing in the datasets. 
+- In all the tables, *"dataset_id"* and *"file_id"* refer to the above-mentioned IDs in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip).
 
 ### Codes
 
 - The source codes of Caddie are provided in [code/src](https://github.com/nju-websoft/CBDS/tree/main/code/src). 
-- To re-implement our system or adapt detailed settings, please open [src](https://github.com/nju-websoft/CBDS/tree/main/code/src) as a java project. Then import all the packages provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib) to your project. 
+- To restore our system, please import [src](https://github.com/nju-websoft/CBDS/tree/main/code/src) into a java project. Then import all the packages provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib). 
 
-Here we briefly explain the structure of source codes following the system components.
+Here we briefly explain the structure of source codes.
 
 #### For Content-Based Dataset Deduplication:
 
@@ -42,27 +42,27 @@ Here we briefly explain the structure of source codes following the system compo
 #### For Content-Based Dataset Retrieval Model:
 
 - The package [Retrieval](https://github.com/nju-websoft/CBDS/tree/main/code/src/Retrieval) includes the codes for indexing and retrieving datasets. The weights of fields in the inverted index can be modified in [GlobalVariances](https://github.com/nju-websoft/CBDS/blob/main/code/src/Retrieval/GlobalVariances.java). 
-- The package [ReRanking](https://github.com/nju-websoft/CBDS/tree/main/code/src/ReRanking) contains the computation process of diversity-based re-ranking based on maximal marginal relevance (MMR).
+- The package [ReRanking](https://github.com/nju-websoft/CBDS/tree/main/code/src/ReRanking) contains the codes for diversity-based re-ranking based on maximal marginal relevance (MMR).
 
 #### For Content-Based Dataset Snippet Extraction:
 
-- The package [QPCSG](https://github.com/nju-websoft/CBDS/tree/main/code/src/QPCSG) contains the process of data sample extraction. Its main method is in [GetResultTree](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/GetResultTree.java). Besides, as a preprocess, it also requires the distance indexes to be built as in [HubLabelIndexer](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/HubLabelIndexer.java). 
+- The package [QPCSG](https://github.com/nju-websoft/CBDS/tree/main/code/src/QPCSG) contains the codes for data sample extraction. Its main entrance is in [GetResultTree](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/GetResultTree.java). Besides, as a preprocessing step, it also requires some distance indexes to be built as in [HubLabelIndexer](https://github.com/nju-websoft/CBDS/blob/main/code/src/QPCSG/HubLabelIndexer.java). 
 
-The rest of packages (not mentioned above) are mainly in support of these components, or used for experiments. 
+The rest packages (not mentioned above) are mainly used to support these components or support experiments. 
 
 ## Experiments
 
-The resources and experimental results are provided in [experiment](https://github.com/nju-websoft/CBDS/tree/main/experiment).
+Data and experimental results are provided in [experiment](https://github.com/nju-websoft/CBDS/tree/main/experiment).
 
 #### Evaluation of Content-Based Dataset Retrieval Model (T1)
 
 - The test collection we used to evaluate Caddie is from [ACORDAR](https://github.com/nju-websoft/ACORDAR). 
-- [experiment/1-retrieval](https://github.com/nju-websoft/CBDS/tree/main/experiment/1-retrieval) provides all the retrieval results on the test collection. We follow the original format (as in [ACORDAR](https://github.com/nju-websoft/ACORDAR)) to present the results. Each row represents a query-dataset pair. The first column represents the query id. The third column stands for dataset id. The fourth column is the ranking score returned by the retrieval system. 
-- Following the evaluation method used by the test collection, we also compute the NDCG and MAP scores using [trec_eval](https://trec.nist.gov/trec_eval/) tool.
+- [experiment/1-retrieval](https://github.com/nju-websoft/CBDS/tree/main/experiment/1-retrieval) provides all the retrieval results on the test collection. We follow the original format (as in [ACORDAR](https://github.com/nju-websoft/ACORDAR)) to publish results. Each row represents a query-dataset pair. The first column represents query id. The third column stands for dataset id. The fourth column is the ranking score computed by the retrieval model. 
+- Following the evaluation method used by the test collection, we also compute the NDCG and MAP scores using [trec_eval](https://trec.nist.gov/trec_eval/).
 
 #### Evaluation of Content-Based Dataset Deduplication (T2)
 
-- [experiment/2-deduplication](https://github.com/nju-websoft/CBDS/tree/main/experiment/2-deduplication) provides all the identified dataset pairs whose metadata or data similarity exceeds the limit. [dataSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90.txt) consists of all the dataset pairs with data similarity $> 0.9 $. [dataSimOver90_metaSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90_metaSimBelow90.txt) includes the dataset pairs with data similarity $> 0.9 $ and metadata similarity $< 0.9 $. [metaSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90.txt) contains the pairs with metadata similarity $> 0.9 $. [metaSimOver90_dataSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90_dataSimBelow90.txt) provides the pairs with metadata similarity $> 0.9 $ and data similarity $< 0.9 $. 
+- [experiment/2-deduplication](https://github.com/nju-websoft/CBDS/tree/main/experiment/2-deduplication) provides all the identified dataset pairs whose metadata or data similarity exceeds a threshold. [dataSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90.txt) consists of all the dataset pairs with data similarity $> 0.9 $. [dataSimOver90_metaSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/dataSimOver90_metaSimBelow90.txt) includes the dataset pairs with data similarity $> 0.9 $ and metadata similarity $< 0.9 $. [metaSimOver90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90.txt) contains the pairs with metadata similarity $> 0.9 $. [metaSimOver90_dataSimBelow90](https://github.com/nju-websoft/CBDS/blob/main/experiment/2-deduplication/metaSimOver90_dataSimBelow90.txt) provides the pairs with metadata similarity $> 0.9 $ and data similarity $< 0.9 $. 
 - In the result files, each row represents a pair of datasets identified by their *"dataset_id"*. 
 
 #### Evaluation of Content-Based Dataset Snippet Extraction (T3)
@@ -72,7 +72,7 @@ The resources and experimental results are provided in [experiment](https://gith
 
 ## License
 
- This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/nju-websoft/CBDS/blob/main/LICENSE) for details. 
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/nju-websoft/CBDS/blob/main/LICENSE) for details. 
 
 ## Citation
 
