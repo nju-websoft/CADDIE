@@ -11,12 +11,14 @@ Data, source codes and experimental results for paper "*[From Metadata to Conten
 
 ## Source Codes and Dependencies
 
-### Environments
+### Dependencies
 
 - JDK 8+
 - MySQL 5.6+
+- Apache Lucene 7.5.0
+- Apache Jena 3.9.0
 
-useful packages (jar files) are all provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib). 
+All useful packages (jar files) are provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib). 
 
 ### Database Settings
 
@@ -25,6 +27,9 @@ useful packages (jar files) are all provided in [code/lib](https://github.com/nj
 - For all the database tables, the fields *"dataset_id"* and *"file_id"* are correspond to the IDs appeared in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip).
 
 ### Codes
+
+- The source codes of Caddie are provided in [code/src](https://github.com/nju-websoft/CBDS/tree/main/code/src). 
+- To re-implement our system or adapt detailed settings, please open [src](https://github.com/nju-websoft/CBDS/tree/main/code/src) as a java project. Then import all the packages provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib) to your project. 
 
 TBD
 
