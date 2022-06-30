@@ -45,7 +45,7 @@ The resources and experimental results are provided in [experiment](https://gith
 
 #### Evaluation of Content-Based Dataset Snippet Extraction (T3)
 
-- [experiment/3-snippet](https://github.com/nju-websoft/CBDS/tree/main/experiment/3-snippet) provides all the original relevance judgments and ratings from the participants of the user study. 
+- [experiment/3-snippet](https://github.com/nju-websoft/CBDS/tree/main/experiment/3-snippet) provides all the original relevance judgments and ratings from the participants of our user study. 
 
 ## License
 
