@@ -11,17 +11,17 @@
  Target Server Version : 80015
  File Encoding         : 65001
 
- Date: 29/06/2022 17:17:33
+ Date: 30/06/2022 15:08:59
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for dataset_metadata
+-- Table structure for dataset_summary
 -- ----------------------------
-DROP TABLE IF EXISTS `dataset_metadata`;
-CREATE TABLE `dataset_metadata`  (
+DROP TABLE IF EXISTS `dataset_summary`;
+CREATE TABLE `dataset_summary`  (
   `dataset_id` int(10) NULL DEFAULT NULL,
   `file_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `title` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL,
