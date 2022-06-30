@@ -31,7 +31,23 @@ All useful packages (jar files) are provided in [code/lib](https://github.com/nj
 - The source codes of Caddie are provided in [code/src](https://github.com/nju-websoft/CBDS/tree/main/code/src). 
 - To re-implement our system or adapt detailed settings, please open [src](https://github.com/nju-websoft/CBDS/tree/main/code/src) as a java project. Then import all the packages provided in [code/lib](https://github.com/nju-websoft/CBDS/tree/main/code/lib) to your project. 
 
-TBD
+Here we briefly explain the structure of source codes following the system components.
+
+#### For Content-Based Dataset Deduplication:
+
+- The package [MSGLabeling](https://github.com/nju-websoft/CBDS/tree/main/code/src/MSGLabeling) handles the data hashing process. It firstly reads each dataset from the local database, splits them into minimum self-contained graphs (MSGs), computes hash values for each MSG, and stores the hash values into the table "triple" in the database.
+- To compute the hash values for each MSG, we reused the [BLABEL](http://blabel.github.io/) algorithm.
+- The package [deduplication](https://github.com/nju-websoft/CBDS/tree/main/code/src/deduplication) implements the similarity join method PPJoin+ to identify pairs of similar datasets. Then the computed similarity values are also indexed as local files. 
+
+#### For Content-Based Dataset Retrieval Model:
+
+- 
+
+#### For Content-Based Dataset Snippet Extraction:
+
+- 
+
+The rest of packages (not mentioned above) are mainly in support of these components and functions. 
 
 ## Experiments
 
