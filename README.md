@@ -6,9 +6,8 @@ Data, source codes and experimental results for paper "*[From Metadata to Conten
 
 ## Datasets
 
-- Caddie is built upon a local MySQL database. 
-- [code/database_tables.sql](code/database_tables.sql) provides the structure of database tables used in our system. One can import empty tables directly by running the .sql file. Table *dataset_metadata* stores all the metadata of the datasets. Table *triple* stores all the parsed RDF triples. Table *rdf_term* stores all the terms (i.e., IRIs, blank nodes, literals) used in the datasets. 
-- For all the database tables, the fields *"dataset_id"* and *"file_id"* are correspond to the IDs appeared in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip).
+- All the datasets used in our system are provided in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip). It contains all the metadata of each dataset, including the title, download link, updated time, etc. 
+- Each dataset has a unique numerical *"dataset_id"* which are used in the experiments. Note that one dataset could have multiple corresponding dump files, identified by *"file_id"*.
 
 ## Source Codes and Dependencies
 
@@ -21,7 +20,9 @@ useful packages (jar files) are all provided in [code/lib](https://github.com/nj
 
 ### Database Settings
 
-- Caddie is built upon a local MySQL database. [code/database_tables.sql](code/database_tables.sql) provides the structure of database tables used in our system. One can import empty tables directly by running the .sql file.
+- Caddie is built upon a local MySQL database. 
+- [code/database_tables.sql](code/database_tables.sql) provides the structure of database tables used in our system. One can import empty tables directly by running the .sql file. Table *dataset_metadata* stores all the metadata of the datasets. Table *triple* stores all the parsed RDF triples. Table *rdf_term* stores all the terms (i.e., IRIs, blank nodes, literals) used in the datasets. 
+- For all the database tables, the fields *"dataset_id"* and *"file_id"* are correspond to the IDs appeared in [datasets.zip](https://github.com/nju-websoft/CBDS/blob/main/datasets.zip).
 
 ### Codes
 
