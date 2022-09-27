@@ -1,6 +1,6 @@
 # CBDS
 
-Data, source codes and experimental results for paper "*[From Metadata to Content-Based Dataset Search](https://github.com/nju-websoft/CBDS)*". 
+Data, source codes and experimental results for paper "*[Metadata Is Not All You Need: Building a Content-Based Search System for (RDF) Datasets](https://github.com/nju-websoft/CBDS)*". 
 
 > The rapid growth of open data published on the Web has promoted fruitful research and development of dataset search systems. Current implementations mainly exploit the metadata of datasets to support ad hoc dataset retrieval. However, metadata contains limited information and often suffers from quality issues. Therefore, Content-Based Dataset Search (CBDS) is demanded to exploit the actual data to provide users with search results featuring higher relevance, lower redundancy, and better explainability. In this paper, we systematically introduce CBDS and identify its advantages, research tasks, and challenges. We ground our vision of CBDS in Caddie, a prototype of content-based ad hoc dataset retrieval over RDF datasets. We empirically demonstrate its feasibility and show its effectiveness compared with existing metadata-based implementations. Finally, we discuss potential impacts of CBDS to users, researchers, developers, and data providers.
 
