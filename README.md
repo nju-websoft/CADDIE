@@ -1,4 +1,4 @@
-# CBDS
+# CADDIE
 
 Data, source codes and experimental results for paper "*[Metadata Is Not All You Need: Building a Content-Based Search System for (RDF) Datasets](https://github.com/nju-websoft/CBDS)*". 
 
