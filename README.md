@@ -70,6 +70,8 @@ Data and experimental results are provided in [experiment](https://github.com/nj
 - [experiment/3-snippet](https://github.com/nju-websoft/CBDS/tree/main/experiment/3-snippet) provides all the original relevance judgments and ratings from the participants of our user study. 
 - In [user-study-results](https://github.com/nju-websoft/CBDS/blob/main/experiment/3-snippet/user-study-results.xlsx), each row represents a record. The column *"user"* stands for the user id. The *"dataset_relevance"* is the relevance score judged by the user. The *"accuracy"* is a binary score comparing the user-judged relevance with the gold standard from the test collection. The *"rating_metadata"* and *"rating_snippet"* are the ratings to the usefulness of metadata and snippets, respectively. 
 
+> If you have any question about the codes or experimental results, please email to [xxwang@smail.nju.edu.cn](mailto:xxwang@smail.nju.edu.cn).
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/nju-websoft/CBDS/blob/main/LICENSE) for details. 
