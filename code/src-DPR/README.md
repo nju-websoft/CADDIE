@@ -2,14 +2,14 @@
 
 If you want to reuse the dense passage retrieval (DPR) model in our paper, you should firstly follow the preprocess steps to generate the pseudo documents for all datasets. Then you may configure and apply the model to your queries and datasets. 
 
-### Preprocess
+## Preprocess
 
 For the preprocess, please: 
 
 1. Use [IlluSnip](https://github.com/nju-websoft/BANDAR) to extract top-$k$ triples for each RDF dataset, and store the results in a local MySQL database table. Note to configure the paths and database to your local settings. 
 2. Run [create_pseudo_document.py](https://github.com/nju-websoft/CADDIE/blob/main/code/src-DPR/create_pseudo_document.py) to create the two pseudo documents for each RDF dataset. 
 
-### Use DPR
+## Use DPR
 
 We use the implementation of [Karpukhin et al., 2020](https://github.com/facebookresearch/DPR). To obtain the model, you can execute the following command:
 
