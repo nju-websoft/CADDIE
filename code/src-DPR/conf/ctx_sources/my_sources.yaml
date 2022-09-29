@@ -1,0 +1,22 @@
+# @package _group_
+
+dpr_wiki:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: data.wikipedia_split.psgs_w100
+  id_prefix: 'wiki:'
+
+
+dataset_ctx_total:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: #The_file_path_of_your_pseudo_documents.tsv
+  id_prefix: 'dataset:'
+
+dataset_ctx_metadata:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: #The_file_path_of_your_pseudo_documents_with_only_metadata.tsv
+  id_prefix: 'metadata:'
+
+dataset_ctx_content:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: #The_file_path_of_your_pseudo_documents_with_only_content.tsv
+  id_prefix: 'content:'
