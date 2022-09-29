@@ -2,7 +2,7 @@
 
 Data, source codes and experimental results for paper "*[Metadata Is Not All You Need: Building a Content-Based Search System for (RDF) Datasets](https://github.com/nju-websoft/CBDS)*". 
 
-> The rapid growth of open data published on the Web has promoted fruitful research and development of dataset search systems. Current implementations mainly exploit the metadata of datasets to support ad hoc dataset retrieval. However, metadata contains limited information and often suffers from quality issues. Therefore, Content-Based Dataset Search (CBDS) is demanded to exploit the actual data to provide users with search results featuring higher relevance, lower redundancy, and better explainability. In this paper, we systematically introduce CBDS and identify its advantages, research tasks, and challenges. We ground our vision of CBDS in Caddie, a prototype of content-based ad hoc dataset retrieval over RDF datasets. We empirically demonstrate its feasibility and show its effectiveness compared with existing metadata-based implementations. Finally, we discuss potential impacts of CBDS to users, researchers, developers, and data providers.
+> The rapid growth of open data published on the Web has promoted fruitful research and development of dataset search systems. Current implementations mainly exploit the metadata of datasets to support ad hoc dataset retrieval. However, metadata contains limited information and often suffers from quality issues. Therefore, Content-Based Dataset Search (CBDS) is demanded to exploit the actual data to provide users with search results featuring higher relevance, lower redundancy, and better explainability. In this paper, we systematically investigate CBDS to identify its advantages, research tasks, and challenges. We ground our vision of CBDS in Caddie, a prototype of content-based ad hoc dataset retrieval over RDF datasets. We empirically demonstrate its feasibility and show its effectiveness compared with existing metadata-based implementations. Finally, we discuss potential impacts of CBDS to users, researchers, developers, and data providers.
 
 ## Datasets
 
@@ -43,6 +43,7 @@ Here we briefly explain the structure of source codes.
 
 - The package [Retrieval](https://github.com/nju-websoft/CBDS/tree/main/code/src/Retrieval) includes the codes for indexing and retrieving datasets. The weights of fields in the inverted index can be modified in [GlobalVariances](https://github.com/nju-websoft/CBDS/blob/main/code/src/Retrieval/GlobalVariances.java). 
 - The package [ReRanking](https://github.com/nju-websoft/CBDS/tree/main/code/src/ReRanking) contains the codes for diversity-based re-ranking based on maximal marginal relevance (MMR).
+- The dense passage retrieval (DPR) model we used in our experiments is provided in [code/src-DPR](https://github.com/nju-websoft/CADDIE/tree/main/code/src-DPR). Usages and details are provided in [code/src-DPR/README](https://github.com/nju-websoft/CADDIE/blob/main/code/src-DPR/README.md). 
 
 #### For Content-Based Dataset Snippet Extraction:
 
