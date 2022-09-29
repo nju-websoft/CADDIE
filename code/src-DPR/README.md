@@ -19,8 +19,8 @@ git clone https://github.com/facebookresearch/DPR.git
 
 Then you should: 
 
-1. Configure the paths of pseudo documents and queries to your local settings in *conf/ctx_sources/* and *conf/datasets/*. We use [ACORDAR](https://github.com/nju-websoft/ACORDAR) queries in our experiments.
-2. Follow the instructions provided in the original [README](https://github.com/facebookresearch/DPR/blob/main/README.md) file to use DPR. We also provide a integrated script [pipeline.sh]() for this process. 
+1. Configure the paths of pseudo documents and queries to your local settings in [conf/ctx_sources/](https://github.com/nju-websoft/CADDIE/tree/main/code/src-DPR/conf/ctx_sources) and [conf/datasets/](https://github.com/nju-websoft/CADDIE/tree/main/code/src-DPR/conf/datasets). We use [ACORDAR](https://github.com/nju-websoft/ACORDAR) queries in our experiments.
+2. Follow the instructions provided in the original [README](https://github.com/facebookresearch/DPR/blob/main/README.md) file to use DPR. We also provide a integrated script [pipeline.sh](https://github.com/nju-websoft/CADDIE/blob/main/code/src-DPR/scripts/pipeline.sh) for this process. 
    - To run the script, you should configure the paths to your local settings. For example, modify `$base_path/dpr/downloads/checkpoint/retriever/single-adv-hn/nq/bert-base-encoder.cp` to your local path of the BERT encoder checkpoint. 
 
 
