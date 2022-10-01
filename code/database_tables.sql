@@ -79,4 +79,16 @@ CREATE TABLE `triple`  (
   INDEX `resource_id, S, P, O`(`file_id`, `subject`, `predicate`, `object`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Compact;
 
+-- ----------------------------
+-- Table structure for illusnip
+-- ----------------------------
+DROP TABLE IF EXISTS `illusnip`;
+CREATE TABLE `illusnip`  (
+  `file_id` int(11) NULL DEFAULT NULL,
+  `dataset_id` int(11) NULL DEFAULT NULL,
+  `snippet` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL,
+  `time` int(11) NULL DEFAULT NULL,
+  INDEX `illusnip`(`file_id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Compact;
+
 SET FOREIGN_KEY_CHECKS = 1;
