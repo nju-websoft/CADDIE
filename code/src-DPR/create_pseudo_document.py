@@ -17,8 +17,8 @@ def get_dataset_text(dataset_id):
     title, description = analysis.fetchone()
     title, description = rm_tab_and_CRLF(title), rm_tab_and_CRLF(description)
 
-    # note to change the name "IlluSnip_2" to your local database table where you store the IlluSnip results
-    dashboard.execute(f"SELECT snippet FROM IlluSnip_2 WHERE  dataset_id={dataset_id}")
+    # note to change the name "illusnip" to your local database table where you store the IlluSnip results
+    dashboard.execute(f"SELECT snippet FROM illusnip WHERE dataset_id={dataset_id}")
 
     snippet ,= dashboard.fetchone()
     if snippet == "":
