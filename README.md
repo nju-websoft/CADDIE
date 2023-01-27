@@ -85,6 +85,6 @@ If you use these data or codes, please kindly cite it as follows:
 @inproceedings{caddie,
   author    = {Xiaxia Wang and Qing Shi and Qiaosheng Chen and Weiqing Luo and Tengteng Lin and Jeff Z. Pan and Baifan Zhou and Evgeny Kharlamov and Gong Cheng},
   title     = {Metadata Is Not All You Need: Building a Content-Based Search System for (RDF) Datasets},
-  year      = {2022}
+  year      = {2023}
 }
 ```
