@@ -1,6 +1,6 @@
 # CADDIE
 
-Data, source codes and experimental results for paper "*[Metadata Is Not All You Need: Building a Content-Based Search System for RDF Datasets]()*". 
+Data, source codes and experimental results for paper "*[Metadata Is Not All You Need: Building a Content-Based Search System for RDF Datasets](https://github.com/nju-websoft/CADDIE)*". 
 
 > The rapid growth of open data published on the Web has promoted fruitful research and development of dataset search systems. Current implementations mainly exploit the metadata of datasets to support ad hoc dataset retrieval. However, metadata contains limited information and often suffers from quality issues. Therefore, Content-Based Dataset Search (CBDS) is demanded to exploit the actual data to provide users with search results featuring higher relevance, lower redundancy, and better explainability. In this paper, we systematically investigate CBDS to identify its advantages, research tasks, and challenges. We ground our vision of CBDS in Caddie, a prototype of content-based ad hoc dataset retrieval over RDF datasets. We empirically demonstrate its feasibility and show its effectiveness compared with existing metadata-based implementations. Finally, we discuss potential impacts of CBDS to users, researchers, developers, and data providers.
 
@@ -71,7 +71,7 @@ Data and experimental results are provided in [experiment](https://github.com/nj
 - [experiment/3-snippet](https://github.com/nju-websoft/CBDS/tree/main/experiment/3-snippet) provides all the original relevance judgments and ratings from the participants of our user study. 
 - In [user-study-results](https://github.com/nju-websoft/CBDS/blob/main/experiment/3-snippet/user-study-results.xlsx), each row represents a record. The column *"user"* stands for the user id. The *"dataset_relevance"* is the relevance score judged by the user. The *"accuracy"* is a binary score comparing the user-judged relevance with the gold standard from the test collection. The *"rating_metadata"* and *"rating_snippet"* are the ratings to the usefulness of metadata and snippets, respectively. 
 
-> If you have any question about the codes or experimental results, please email to [will be avaliable after double-blind review period].
+> If you have any question about the codes or experimental results, please email to [xxwang@smail.nju.edu.cn](mailto:xxwang@smail.nju.edu.cn).
 
 ## License
 
