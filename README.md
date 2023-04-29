@@ -60,7 +60,7 @@ Data and experimental results are provided in [experiment].
 - The test collection we used to evaluate Caddie is from [ACORDAR](https://github.com/nju-websoft/ACORDAR). 
 - [experiment/1-retrieval] provides all the retrieval results on the test collection. We follow the original format (as in [ACORDAR](https://github.com/nju-websoft/ACORDAR)) to publish results. Each row represents a query-dataset pair. The first column represents query id. The third column stands for dataset id. The fourth column is the ranking score computed by the retrieval model. 
 - Following the evaluation method used by the test collection, we also compute the NDCG and MAP scores using [trec_eval](https://trec.nist.gov/trec_eval/).
-- [experiment/1-retrieval/validation-set] provides the validation set we used to tune field weights of our retrieval model. 
+- [experiment/1-retrieval/validation-set] provides the validation set we used to tune field weights of our retrieval model. The file [query] provides the keyword queries used in the validation set, each with a numerical ID. Each row in [annotation] represents a query-dataset-relevance tuple, where the queries are represented by their IDs as in [query], the datasets are represented by their *"dataset_id"*, and the relevance scores are annotated in a 0--2 scale (0: irrelevant, 1: partially relevant, 2: highly relevant).
 
 #### Evaluation of Content-Based Dataset Deduplication (T2)
 
