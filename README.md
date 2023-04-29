@@ -1,8 +1,8 @@
 # CADDIE
 
-Data, source codes and experimental results for paper "*Metadata Is Not Enough: Towards Content-Based Dataset Search*". 
+Data, source codes and experimental results for paper "*Metadata Is Not Enough: Content-Based Ad Hoc RDF Dataset Retrieval*". 
 
-> The rapid growth of open data published on the Web has promoted fruitful research and development of dataset search systems. Current implementations mainly exploit the metadata of datasets to support ad hoc dataset retrieval. However, metadata contains limited information and often suffers from quality issues. Therefore, Content-Based Dataset Search (CBDS) is demanded to exploit the actual data to provide users with search results featuring higher relevance, lower redundancy, and better explainability. In this paper, we present the first systematic investigation of CBDS to identify its advantages, research tasks, and challenges. We ground our vision of CBDS in CADDIE, a fully functional prototype of content-based ad hoc dataset retrieval over RDF datasets. We empirically demonstrate its feasibility and show its effectiveness compared with existing metadata-based implementations. Finally, we discuss potential impacts of CBDS to users, researchers, developers, and data providers.
+> The rapid growth of open and structured RDF data on the Web has promoted the development of dataset search as an important research topic. The core function of existing systems is ad hoc dataset retrieval (AHDR) based on the metadata of datasets, which contains limited information and often suffers from quality issues. To overcome the limitations, in this paper, we systematically investigate content-based AHDR to exploit the actual RDF data in datasets. We address three main tasks of content-based AHDR with novel methods for handling the large size and complex structure of RDF data to facilitate dataset retrieval, deduplication, and snippet extraction. These methods are integrated into an online and open-source prototype called CADDIE. The effectiveness and feasibility of its components are evaluated on a public test collection and by a user study.
 
 ## Datasets
 
