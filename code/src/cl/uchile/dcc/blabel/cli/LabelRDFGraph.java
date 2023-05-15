@@ -60,7 +60,7 @@ public class LabelRDFGraph {
 
 		HashFunction hf = Hashing.md5(); //.murmur3_128(); .sha1(); .sha256(); .sha512()
 
-		InputStream is = new FileInputStream("C:/Users/xiaxiawang/Desktop/1.nt");
+		InputStream is = new FileInputStream("C:/Users/Desktop/1.nt");
 		String iestr = DEFAULT_ENCODING;
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(is,iestr));
@@ -71,7 +71,7 @@ public class LabelRDFGraph {
 			return;
 		}
 
-		OutputStream os = new FileOutputStream("C:/Users/xiaxiawang/Desktop/11.nt");
+		OutputStream os = new FileOutputStream("C:/Users/Desktop/11.nt");
 		String oestr = DEFAULT_ENCODING;
 
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os,oestr));
