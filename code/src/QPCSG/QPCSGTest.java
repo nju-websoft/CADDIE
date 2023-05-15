@@ -11,8 +11,6 @@ public class QPCSGTest extends Thread{
      *
      * Queries are from the test-collection (ACORDAR, SIGIR 22)
      *
-     * @author Xiaxia Wang
-     *
      */
 
     int queryId = 0;
