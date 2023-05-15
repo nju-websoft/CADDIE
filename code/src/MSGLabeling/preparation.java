@@ -11,11 +11,6 @@ import java.util.*;
 
 public class preparation {
     /**
-     *
-     * @author Xiaxia Wang
-     */
-
-    /**
      * To select all distinct local-id of local-stored datasets.
      */
     private static void getAllDatasets(String fileName) {
