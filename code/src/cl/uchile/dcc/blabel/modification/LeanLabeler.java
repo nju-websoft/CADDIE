@@ -29,7 +29,6 @@ import java.util.logging.Logger;
 /**
  * Main method for leaning and/or labelling an RDF HubLabel.graph.
  * 
- * @author Xiaxia Wang
  *
  */
 public class LeanLabeler {
