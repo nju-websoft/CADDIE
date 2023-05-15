@@ -30,8 +30,6 @@ public class DatasetIndexer {
      * index patterns and keywords for QPCSG
      * select top-k patterns and/or keywords: k is a super-parameter
      *
-     * @DATE: 20210820
-     * @author xxwang
      */
     private static void indexDatasetPattern(int start, int end) throws Exception {
         int datasetCount = 0;
