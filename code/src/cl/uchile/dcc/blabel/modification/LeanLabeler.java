@@ -58,7 +58,7 @@ public class LeanLabeler {
 
 		HashFunction hf = Hashing.md5(); //.murmur3_128(); .sha1(); .sha256(); .sha512()
 
-//		InputStream is = new FileInputStream("C:/Users/xiaxiawang/Desktop/1.nt");
+//		InputStream is = new FileInputStream("C:/Users/Desktop/1.nt");
 //		String iestr = DEFAULT_ENCODING;
 //
 //		BufferedReader br = new BufferedReader(new InputStreamReader(is,iestr));
@@ -190,8 +190,8 @@ public class LeanLabeler {
 
 	public static void main(String[] args) {
 		Set<String> text = new HashSet<>();
-		text.addAll(ReadFile.readString("C:/Users/xiaxiawang/Desktop/0.nt"));
-//		text.addAll(ReadFile.readString("C:/Users/xiaxiawang/Desktop/test.nt"));
+		text.addAll(ReadFile.readString("C:/Users/Desktop/0.nt"));
+//		text.addAll(ReadFile.readString("C:/Users/Desktop/test.nt"));
 		try {
 			System.out.println("HubLabel.graph hash: " + leanAndLabel(text));
 		} catch (Exception e) {
