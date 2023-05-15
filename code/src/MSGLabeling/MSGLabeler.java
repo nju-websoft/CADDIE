@@ -21,7 +21,6 @@ public class MSGLabeler {
     /**
      * Leaning and label each MSG using the LeanLabeler, and update the labels into HubLabel.database.
      *
-     * @author Xiaxia Wang
      */
 
     /**
