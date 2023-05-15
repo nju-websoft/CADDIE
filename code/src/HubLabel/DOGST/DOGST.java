@@ -373,7 +373,7 @@ public class DOGST {
 						bestTree = at1;
 						try { //record all bestTree candicates !!
 //							PrintWriter writer = new PrintWriter(PATHS.DBpediaResult + "treeResult/" + count + ".txt");
-							PrintWriter writer = new PrintWriter("C:/Users/xiaxiawang/Desktop/test/" + count + ".txt");
+							PrintWriter writer = new PrintWriter("C:/Users/Desktop/test/" + count + ".txt");
 							for (TreeEdge edge: bestTree.edge) {
 								writer.print(edge.u + " " + edge.v + ",");
 							}
