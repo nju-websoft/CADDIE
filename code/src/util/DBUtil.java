@@ -12,8 +12,8 @@ public class DBUtil {
     public static String name = "com.mysql.cj.jdbc.Driver";
     public static String url = "jdbc:mysql://114.212.190.189:3306/dataset_analysis_2021apr?" +
         "useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true";
-    public static String user = "xxwang";
-    public static String password = "xxwang";
+    public static String user = "user";
+    public static String password = "passwd";
 
     public Connection conn = null;
 
